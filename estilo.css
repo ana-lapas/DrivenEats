@@ -1,0 +1,180 @@
+.pagina {
+    display: flexbox;
+    background-color: blue;
+}
+body{
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+}
+h1{
+    font-family: righteous;
+    font-size: 26px;
+    color: #333333;
+    margin-left: 19px;
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+.barraTopo {
+    background-color: #CF2B2B;
+    height: 92px;
+    width: 1023px; /*Na aula do dia 01/08 no compilado a largura máx de tablet (não sei se considero mobile tbm) era de 1023px por isso deixei isso*/
+    box-shadow: 4px 3px 4px 4.5px rgba(10, 10, 10, 0.30);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nomeApp {
+    padding: 20px;
+    padding-top: 28px;
+    width: auto;
+    justify-content: center;
+    line-height: 15px;
+}
+.driven {
+    font-size: 44px ;
+    font-family: 'Righteous';
+    color: #ffffff ;
+    font-weight: 400;
+}
+.subTitulo{
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: 400;
+}
+.menu {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 92px;
+    margin-bottom: 108px;
+}
+::-webkit-scrollbar{
+    Display:none;
+}
+a {
+    text-decoration: none;
+}
+.bordaVerde {
+    outline: 5px solid #32B72F;
+    outline-offset: -5px;
+}
+.barraPedidos1, .barraPedidos2, .barraPedidos3 {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    overflow-x: scroll;
+    scrollbar-color: rgba(10, 10, 255, 0);
+}
+.escondido {
+    display: none;
+}
+.pedidos {
+    background-color: #ffffff;
+    width: 171px;
+    border-radius: 9px;
+    margin-left: 16px;
+    direction: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: flex-start;    
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.15);
+    position: relative;
+}
+.fotoD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 171px;
+}
+.foto {
+    height: 87px;
+    width: 144px;
+    border-radius: 8px;
+}
+.informacoes{
+   margin-left: 15px;
+   margin-top: 8px;
+}
+.nomePrato, .nomeBebida, .nomeSobremesa{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 4px;
+    line-height: 18.75px;
+}
+.detalhe{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-bottom: 5px;
+    line-height: 17.58px;
+}
+.preco {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 18.75px;
+    margin-bottom: 16px;
+}
+.ion-icon {
+    color: #32B72F;
+    font-size: 16px;
+    position: absolute;
+    right: 12.78px;
+    bottom: 15.78px;
+}
+.barraInferior {
+    background-color: #ffffff;
+    height: 92px;
+    width: 1023px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.textoBotao {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 4px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 8px;
+    line-height: 23px;
+}
+.pedidoFinal {
+    border-radius: 35px;
+    background-color: #cbcbcb;
+    width: 364px;
+    height: 61px;
+}
+.pedidoCompleto {
+    background-color: #32b72f; 
+    width: 364px;
+    height: 61px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@media(max-width:619px) {
+    .barraInferior, .barraTopo {
+        width: 100%;
+    }
+}
